@@ -6,6 +6,7 @@
 
 
 # Add Operation
+.align 4
 .global m8_add_p16
 m8_add_p16:
   entry  a1,16 
@@ -16,6 +17,7 @@ m8_add_p16:
   retw.n 
 
 
+.align 4
 .global m16_add_p8
 m16_add_p8:
   entry  a1,16 
@@ -26,6 +28,7 @@ m16_add_p8:
   retw.n 
 
 .global m32_add_p4
+.align 4
 m32_add_p4:
   entry  a1,16 
   ld.qr  q1,a3,0 
@@ -36,6 +39,7 @@ m32_add_p4:
 
 
 # Sub Operation
+.align 4
 .global m8_sub_p16
 m8_sub_p16:
   entry  a1,16 
@@ -45,6 +49,7 @@ m8_sub_p16:
   st.qr  q2,a4,0   
   retw.n 
 
+.align 4
 .global m16_sub_p8
 m16_sub_p8:
   entry  a1,16 
@@ -54,6 +59,7 @@ m16_sub_p8:
   st.qr  q2,a4,0   
   retw.n 
 
+.align 4
 .global m32_sub_p4
 m32_sub_p4:
   entry  a1,16 
@@ -65,6 +71,7 @@ m32_sub_p4:
 
 
 # Signed Mul Operation
+.align 4
 .global m8_mul_p16
 m8_mul_p16:
   entry  a1,16 
@@ -76,6 +83,7 @@ m8_mul_p16:
   st.qr  q2,a4,0   
   retw.n 
 
+.align 4
 .global m16_mul_p8
 m16_mul_p8:
   entry  a1,16 
@@ -89,8 +97,9 @@ m16_mul_p8:
 
 
 # Unsigned Mul Operation
-.global m8_mul_p16
-m8_mul_p16:
+.align 4
+.global m8_umul_p16
+m8_umul_p16:
   entry  a1,16 
   ld.qr  q1,a3,0 
   ld.qr  q0,a2,0
@@ -100,8 +109,9 @@ m8_mul_p16:
   st.qr  q2,a4,0   
   retw.n 
 
-.global m16_mul_p8
-m16_mul_p8:
+.global m16_umul_p8
+.align 4
+m16_umul_p8:
   entry  a1,16 
   ld.qr  q1,a3,0 
   ld.qr  q0,a2,0

@@ -12,12 +12,12 @@ extern "C" {
 /* Add Packed 16-bit Values (8)  
  * EE.VADDS.S16  Q3, Q1, Q2
  */ 
-  in16_t* m16_add_p8(in16_t *A, in16_t *B, in16_t *C);
+  int16_t* m16_add_p8(int16_t *A, int16_t *B, int16_t *C);
 
 /* Add Packed 32-bit Values (4)  
  * EE.VADDS.S32  Q3, Q1, Q2
  */ 
-  in32_t* m32_add_p4(in32_t *A, in32_t *B, in32_t *C);
+  int32_t* m32_add_p4(int32_t *A, int32_t *B, int32_t *C);
 
 
 
@@ -30,12 +30,12 @@ extern "C" {
 /* Add Packed 16-bit Values (8)  
  * EE.VSUBS.S16  Q3, Q1, Q2
  */ 
-  in16_t* m16_sub_p8(in16_t *A, in16_t *B, in16_t *C);
+  int16_t* m16_sub_p8(int16_t *A, int16_t *B, int16_t *C);
 
 /* Add Packed 32-bit Values (4)  
  * EE.VSUBS.S32  Q3, Q1, Q2
  */ 
-  in32_t* m32_sub_p4(in32_t *A, in32_t *B, in32_t *C);
+  int32_t* m32_sub_p4(int32_t *A, int32_t *B, int32_t *C);
 
 
 
@@ -48,7 +48,7 @@ extern "C" {
 /* Signed multiplication of two Packed Arrays with 16-bit Values (8)  
  * EE.VMUL.S16  Q3, Q1, Q2
  */ 
-  in32_t* m16_mul_p8(in16_t *A, in16_t *B, in16_t *C);
+  int32_t* m16_mul_p8(int16_t *A, int16_t *B, int16_t *C);
 
 
 
@@ -61,7 +61,7 @@ extern "C" {
 /* Unsigned multiplication of two Packed Arrays with 16-bit Values (8)  
  * EE.VMUL.U16  Q3, Q1, Q2
  */ 
-  in32_t* m16_umul_p8(in16_t *A, in16_t *B, in16_t *C);
+  int32_t* m16_umul_p8(int16_t *A, int16_t *B, int16_t *C);
 
 }
 
