@@ -20,6 +20,36 @@ Simple implementation of SIMD intrinsic functions for the ESP32S3 microcontrolle
 ## Usage
 Just clone this repository, extract files in your arduino project directory and include "simd.h" in you arduino code. 
 
+### Example
+```cpp
+#include "simd.h"
+
+int16_t __attribute__((aligned (16))) a[8] = {1,2,3,4,5,6,7,8};
+int16_t __attribute__((aligned (16))) b[8] = {8,7,6,5,4,3,2,1};
+int16_t __attribute__((aligned (16))) c[8]{0};
+
+void 
+setup() 
+{
+  Serial.begin(115200);
+}
+
+void 
+loop()
+{
+  m16_add_p8(a, b, c);
+  Serial.println("Result:");
+  for (int i = 0; i < 8; i++) 
+  {  
+    Serial.printf("%3d + %d = %d\n", a[i]++, b[i]++, c[i]);
+  }
+
+  delay(1000);
+}
+
+```
+
+
 ## Credits
 - https://www.espressif.com/sites/default/files/documentation/esp32-s3_technical_reference_manual_en.pdf
 - https://github.com/troyhacks/ESP32-S3_minimal_SIMD_example
