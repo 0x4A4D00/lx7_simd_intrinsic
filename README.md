@@ -1,5 +1,7 @@
 ## Overview
-Simple implementation of SIMD intrinsic functions for the ESP32S3 microcontroller with lx7 architecture.
+SIMD (Single Instruction, Multiple Data) intrinsic functions are a type of instruction that allows for simultaneous processing of multiple data elements. This means that a single operation can be applied to multiple values at the same time, improving performance and reducing execution time.
+
+In this implementation, SIMD intrinsic functions have been made available for use on the ESP32S3 microcontroller with lx7 architecture. The goal is to provide a simple way to take advantage of these instructions.
 
 ## Features
 - Vector Addition
@@ -14,7 +16,7 @@ Simple implementation of SIMD intrinsic functions for the ESP32S3 microcontrolle
   - 8-bit vector multiplication of two arrays with 16 values.
   - 16-bit vector multiplication of two arrays with 8 values.
 
-## Depnedencies
+## Dependencies
 **Nothing.**
 
 ## Usage
@@ -49,6 +51,8 @@ loop()
 
 ```
 
+## Contributions
+Pull requests are wellcome, Thanks.🤝
 
 ## Credits
 - https://www.espressif.com/sites/default/files/documentation/esp32-s3_technical_reference_manual_en.pdf
