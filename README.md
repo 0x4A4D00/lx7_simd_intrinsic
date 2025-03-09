@@ -52,7 +52,7 @@ loop()
 ```
 
 ## Contributions
-Pull requests are wellcome, Thanks.🤝
+Pull requests are welcome, Thanks.🤝
 
 ## Credits
 - https://www.espressif.com/sites/default/files/documentation/esp32-s3_technical_reference_manual_en.pdf
